@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container-bot{
+  max-width: 950px;
+    width: 100%;
+    padding: 20px 30px 20px 20px;
+    margin: 0 20px;
+}
+button{
+  display: block;
+  padding: 8px 30px ;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  margin: 10px auto;
+}
+button:hover{
+  background-color: #333;
+  color: #ccc;
+}
+
+.label{
+  display:block;
+  font-size:14px;
+  text-align:left !important;
+  margin:10px 20px 0 20px;
+}
+.ex2-col{
+  margin-left: 30px !important;
+}
+.box-number{
+  display:block !important ;
+  background-color:rgb(235, 228, 228);
+  border-radius:15px;
+  box-shadow: -15px -15px -15px rgba(255,255,255,0.2),
+              15px 15px 15px rgba(0,0,0,0.1),
+            inset -5px -5px -5px rgba(255,255,255,0.2),
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 150px;
+  height:40px;
+  margin: 5px 10px;
+}
+.box-count {
+  display:inline-block !important ;
+  background-color:rgb(255, 254, 254);
+  border-radius:15px;
+  box-shadow: -15px -15px -15px rgba(255,255,255,0.2),
+              15px 15px 15px rgba(0,0,0,0.1),
+            inset -5px -5px -5px rgba(255,255,255,0.2),
+            inset 5px 5px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 200px;
+  height:40px;
+  margin: 5px 10px;
+}
+.container .row .col{
+  display:flex;
+  justify-content: center;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #aaa8b3;
+}
+::selection{
+  background: #6d50e2;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  padding: 20px 30px  20px  20px;
+  background: #c7c5c5;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .topic{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  /* align-items: center; */
+  text-align: center;
+  justify-content: space-between;
+}
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+.content .list label{
+  height: 60px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 20;
+}
+#ex1:checked ~ .list label.ex1,
+#ex2:checked ~ .list label.ex2,
+#ex3:checked ~ .list label.ex3,
+#ex4:checked ~ .list label.ex4,
+#ex5:checked ~ .list label.ex5,
+#ex6:checked ~ .list label.ex6,
+#ex7:checked ~ .list label.ex7,
+#ex8:checked ~ .list label.ex8
+{
+  color: #fff;
+}
+.content .list label:hover{
+  color: #ffff;
+  background-color: #6d50e2;
+  border-radius: 10px;
+  transform: transition 0.3s linear;
+}
+
+
+/* .content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease; */
+/* } */
+#ex1:checked ~ .list .slider{
+  top: 0;
+}
+#ex2:checked ~ .list .slider{
+  top: 60px;
+}
+#ex3:checked ~ .list .slider{
+  top: 120px;
+}
+#ex4:checked ~ .list .slider{
+  top: 180px;
+}
+#ex5:checked ~ .list .slider{
+  top: 240px;
+}
+#ex6:checked ~ .list .slider{
+  top: 240px;
+}
+#ex7:checked ~ .list .slider{
+  top: 240px;
+}
+#ex8:checked ~ .list .slider{
+  top: 240px;
+}
+
+.content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.content .text{
+  display: none;
+}
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.content .text p{
+  text-align: justify;
+}
+.content .text-content .home{
+  display: block;
+}
+#ex1:checked ~ .text-content .ex1,
+#ex2:checked ~ .text-content .ex2,
+#ex3:checked ~ .text-content .ex3,
+#ex4:checked ~ .text-content .ex4,
+#ex5:checked ~ .text-content .ex5,
+#ex6:checked ~ .text-content .ex6,
+#ex7:checked ~ .text-content .ex7,
+#ex8:checked ~ .text-content .ex8{
+  display: block;
+}
+#ex2:checked ~ .text-content .ex1,
+#ex3:checked ~ .text-content .ex1,
+#ex4:checked ~ .text-content .ex1,
+#ex5:checked ~ .text-content .ex1,
+#ex6:checked ~ .text-content .ex1,
+#ex7:checked ~ .text-content .ex1,
+#ex8:checked ~ .text-content .ex1
+{
+  display: none;
+}
+.content input{
+  display: none;
+}
+
+.top{
+  font-size: 12px;
+}
+
+/*  ex1  */
+.SList{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 10px;
+}
+.SList:hover{
+  box-shadow: -15px -15px -15px rgba(255,255,255,0.2),
+  15px 15px 15px rgba(0,0,0,0.1),
+  inset -5px -5px -5px rgba(255,255,255,0.2),
+  inset 5px 5px 5px rgba(0,0,0,0.1);
+}
+
+.container-bot .count-box{
+  display: block;
+  margin-left: 10px;
+  border-radius:10px;
+  padding:10px 20px;
+}
+.input-result{
+  width: 100%;
+}
+/* ex2  */
+ 
+.col-1{
+  margin-top: 10px;
+}
+.left{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}

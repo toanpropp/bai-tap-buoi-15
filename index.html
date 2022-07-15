@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="content">
+      <input type="radio" name="slider" checked id="ex1">
+      <input type="radio" name="slider" id="ex2">
+      <input type="radio" name="slider" id="ex3">
+      <input type="radio" name="slider" id="ex4">
+      <input type="radio" name="slider" id="ex5">
+      <input type="radio" name="slider" id="ex6">
+      <input type="radio" name="slider" id="ex7">
+      <input type="radio" name="slider" id="ex8">
+      <div class="list">
+        <label for="ex1" class="ex1">
+        <span class="title">Exercise 1</span>
+      </label>
+      <label for="ex2" class="ex2">
+        <span class="title">Exercise 2</span>
+      </label>
+      <label for="ex3" class="ex3">
+        <span class="title">Exercise 3</span>
+      </label>
+      <label for="ex4" class="ex4">
+        <span class="title">Exercise 4</span>
+      </label>
+      <label for="ex5" class="ex5">
+        <span class="title">Exercise 5</span>
+      </label>
+      <label for="ex6" class="ex6">
+        <span class="title">Exercise 6</span>
+      </label>
+      <label for="ex7" class="ex7">
+        <span class="title">Exercise 7</span>
+      </label>
+      <label for="ex8" class="ex8">
+        <span class="title">Exercise 8</span>
+      </label>
+      <div class="slider"></div>
+    </div>
+
+      <div class="text-content">
+        <div class="ex1 text">
+          <div class="title">
+            Quản lý tuyển sinh
+            <div class="container">
+              <div class="top">
+                <h2>outline</h2>
+                <p>
+                    <strong>input:</strong><br>
+                        Điểm sàn<br>
+                        môn thứ 1<br>
+                        môn thứ 2<br>
+                        môn thứ 3<br>
+                        điểm cộng khu vực<br>
+                        điểm cộng đối tượng<br>
+                      <strong>Process</strong> <br>
+                      điểm 1 2 3 > 0 
+                      điểm tổng 1 2 3 >= điểm sàn<br>
+                       <br>
+                      <strong>output:</strong><br>
+                      bạn đã đậu; bạn đã rớt
+                </p>
+              </div>
+            </div>
+            <div class="container-bot">
+              <div class="row">
+                <div class="col">
+                  <input value="" class="count-box" id="standnumber" type="text" placeholder="điểm chuẩn">
+                  <select name="" id="SList00" class="SList" placeholder="Chọn Khu vực">
+                    <option value="">Chọn khu vực</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                  </select>
+                  <select name="" id="SList01" class="SList" placeholder="Chọn đối tượng">
+                    <option value="">Chọn đối tượng</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+                  <div class="col col-1">
+                    <input value="" class="count-box" id="sub1" type="Number" placeholder="Điểm môn thứ 1">
+                    <input value="" class="count-box" id="sub2" type="Number" placeholder="Điểm môn thứ 2">
+                    <input value="" class="count-box" id="sub3" type="Number" placeholder="Điểm môn thứ 3">
+                  </div>
+                <button onclick="ex1()">Kết quả</button>
+                <input class="box-count input-result" id="kq"  type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ex2 text">
+          <div class="title">
+            Tính tiền điện
+          </div>
+          <div class="container">
+            <div class="top left">
+              <h2 class="center">outline</h2>
+              <strong>input:</strong><br>
+                  Name<br>
+                  Kw<br>
+                    <strong>process:</strong> pseudo code<br>
+                    kw < 50=500*kw <br>
+                    kw <= 100  = 500 * 50 +(kw - 50) *650;<br>
+                    kw <=200 = 500 * 50 +(kw * 650) + ((kw - 100)*850)<br>
+                    = 500 * 50 +(kw * 650) + (kw * 850) ((kw - 200)*1100)<br>
+                    kw >350 = 500 * 50 +(kw * 650) + (kw * 850) + (kw * 1100)+ ((kw - 350)*1300)<br>
+                    <strong>output:</strong><br>
+                    Name + Gia tien<br>        
+              </p>
+            </div>
+          </div>
+          
+          <div class="container-bot">
+
+            <div class="row">
+              <div class="col">
+                <input value="" class="count-box" id="Name" type="text" placeholder="Nhập tên">
+                <input value="" class="count-box" id="Enumber" type="Number" placeholder="Nhập số lượng điện đã dùng">
+              </div>
+              <button onclick="ex2()">Thành tiền</button>
+              <input class="box-count input-result" id="ElectricRes" value="" type="text">
+            </div>
+          </div>
+        </div>
+        <div class="ex3 text">
+          <div class="title">
+            Tính tiền thuế thu nhập cá nhân
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                <strong></strong><br>
+                <br>
+                <br>
+                <br>
+               
+        
+                  <strong>process:</strong> pseudo code<br>
+                  <br>
+                 <br>
+                  <br>
+                  <strong>output:</strong><br>
+                  <br>
+                  <br>
+            </p>
+            </div>
+          </div>
+          <div class="container-bot">
+
+            <div class="row">
+              <div class="col">
+
+                <input value="" class="count-box" id="NameEx3" type="text" placeholder="Nhập tên">
+                <input value="" class="count-box" id="YMoney" type="Number" placeholder="Tổng thu nhập năm">
+                <input value="" class="count-box" id="PersMoney" type="Number" placeholder="Số người phụ thuộc">
+              </div>
+              <button onclick="">Thành tiền</button>
+              <input class="box-count hiresult" id="ElectricRes" value="" type="text">
+            </div>
+          </div>
+              <!-- <input type="text" class="box-count"id="usd" value="" placeholder="USD">
+              
+              <button onclick="currency()">Count</button>
+              <input class="box-count box-result" id="vnd" value="" type="text" placeholder="VND"> -->
+          
+        </div>
+        <div class="ex4 text">
+          <div class="title">
+            Calculate the area and perimeter of the rectangle
+          </div>
+          <div class="container">
+            <div class="top">
+              <h2>outline</h2>
+              <p>
+                  <strong>input:</strong><br>
+                  <br>
+                  <br>
+                  <br>
+                 
+          
+                    <strong>process:</strong> pseudo code<br>
+                    <br>
+                    <br>
+                    <br>
+                    <strong>output:</strong><br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+              </p>
+            </div>
+          </div>
+          <div class="container-bot">
+            <div class="row">
+              <div class="col">
+                <select name="" id="CusList" class="SList" placeholder="Chọn loại khách hàng">
+                  <option value="">Chọn loại khách hàng</option>
+                  <option value="2">Nhà dân</option>
+                  <option value="3">Doanh nghiệp</option>
+                </select>
+                <input value="" class="count-box"id="CusId" type="text"placeholder="Nhập mã khách hàng">
+                <input value="" class="count-box"id="VipChannel" type="number"placeholder="Số kênh cao cấp">
+              </div>
+              <button onclick="">Thành tiền</button>
+              <input class="box-count const-result" id="triangle" value="" type="text">
+            </div>
+          </div>
+          <!-- <div class="col ex2-col">
+            <input type="text" class="box-count"id="width" value="" placeholder="Width">
+            <input type="text" class="box-count" id="long" value="" placeholder="Long">
+          </div>
+          <button onclick="area_perimeter()">Count</button>
+          <input class="box-count box-result" type="text" id="area" placeholder="acreage">
+          <input class="box-count box-result" type="text" id="perimeter" placeholder="perimeter">
+          
+        </div> -->
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
