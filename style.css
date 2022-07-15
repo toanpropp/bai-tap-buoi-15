@@ -251,3 +251,12 @@ body{
 .center{
   text-align: center;
 }
+.mt-3{
+  margin-top: 10px;
+}
+.hidden{
+  display: none !important;
+}
+.show{
+  display: block !important;
+}
