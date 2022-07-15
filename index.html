@@ -141,17 +141,17 @@
               <h2>outline</h2>
               <p>
                 <strong></strong><br>
-                <br>
-                <br>
-                <br>
+                tên<br>
+                tổng thu nhập 1 năm<br>
+                số người phụ thuộc<br>
                
         
                   <strong>process:</strong> pseudo code<br>
-                  <br>
-                 <br>
+                 tổng tiền lương chịu thuế = tổng thu nhập 1 năm - 4tr - số người phụ thuộc x 1.6tr<br>
+                 thuế =  (tổng tiền lương chịu thuế x % mức thu thuế theo thu nhập)/100 <br>
                   <br>
                   <strong>output:</strong><br>
-                  <br>
+                  tên , tổng tiền lương chịu thuế , thuế phải đóng <br>
                   <br>
             </p>
             </div>
@@ -161,12 +161,12 @@
             <div class="row">
               <div class="col">
 
-                <input value="" class="count-box" id="NameEx3" type="text" placeholder="Nhập tên">
+                <input value="" class="count-box" id="nameex3" type="text" placeholder="Nhập tên">
                 <input value="" class="count-box" id="YMoney" type="Number" placeholder="Tổng thu nhập năm">
                 <input value="" class="count-box" id="PersMoney" type="Number" placeholder="Số người phụ thuộc">
               </div>
-              <button onclick="">Thành tiền</button>
-              <input class="box-count hiresult" id="ElectricRes" value="" type="text">
+              <button onclick="ex3()">Thành tiền</button>
+              <input class="box-count input-result" id="Pax" value="" type="text">
             </div>
           </div>
               <!-- <input type="text" class="box-count"id="usd" value="" placeholder="USD">
@@ -205,27 +205,19 @@
           <div class="container-bot">
             <div class="row">
               <div class="col">
-                <select name="" id="CusList" class="SList" placeholder="Chọn loại khách hàng">
+                <select name="" id="List" class="SList" onchange="change()" placeholder="Chọn loại khách hàng">
                   <option value="">Chọn loại khách hàng</option>
-                  <option value="2">Nhà dân</option>
-                  <option value="3">Doanh nghiệp</option>
+                  <option value="1">Nhà dân</option>
+                  <option value="2">Doanh nghiệp</option>
                 </select>
                 <input value="" class="count-box"id="CusId" type="text"placeholder="Nhập mã khách hàng">
                 <input value="" class="count-box"id="VipChannel" type="number"placeholder="Số kênh cao cấp">
               </div>
-              <button onclick="">Thành tiền</button>
-              <input class="box-count const-result" id="triangle" value="" type="text">
+              <input value="" class="mt-3 count-box hidden" id="channelList" type="number"placeholder="số kênh">
+              <button onclick="ex4()">Thành tiền</button>
+              <input class="box-count const-result" id="Money" value="" type="text">
             </div>
           </div>
-          <!-- <div class="col ex2-col">
-            <input type="text" class="box-count"id="width" value="" placeholder="Width">
-            <input type="text" class="box-count" id="long" value="" placeholder="Long">
-          </div>
-          <button onclick="area_perimeter()">Count</button>
-          <input class="box-count box-result" type="text" id="area" placeholder="acreage">
-          <input class="box-count box-result" type="text" id="perimeter" placeholder="perimeter">
-          
-        </div> -->
         </div>        
       </div>
     </div>

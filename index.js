@@ -87,8 +87,57 @@ function ex2(){
 }
 
 function ex3() {
-    var TotalYearMoney
-    var people_per
+    var names = document.getElementById("nameex3").value;
+    var TotalYearMoney = Number(document.getElementById("YMoney").value);
+    var peoplebase = Number(document.getElementById("PersMoney").value);
+    var salaPax = TotalYearMoney - 4e+6- peoplebase *16e+5;
+        salaPax = Number(salaPax);
+    var totalpax;
+    totalpax = Number(totalpax);
+    if (salaPax <= 60e+6 ){
+        totalpax = (salaPax * 5)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if (salaPax > 60e+6 && salaPax <= 120e+6){
+        totalpax = (salaPax * 10)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if (salaPax > 120e+6 && salaPax <= 210e+6){
+        totalpax = (salaPax * 15)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if(salaPax > 210e+6 && salaPax <= 384e+6){
+        totalpax = (salaPax * 20)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if(salaPax > 384e+6 && salaPax <=624e+6){
+        totalpax = (salaPax * 25)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if(salaPax > 624e+6 && salaPax <= 960e+6){
+        totalpax = (salaPax * 30)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }else if (salaPax > 960e+6){
+        totalpax = (salaPax * 5)/100 ;
+        document.getElementById("Pax").value =(names +"; "+"tổng thu nhập chịu thuế của bạn là: " +new Intl.NumberFormat('vn-VN').format(salaPax)+"; "+"số tiền thuế thu nhập cá nhân của bạn là: "+new Intl.NumberFormat('vn-VN').format(totalpax));
+    }
+
+}function change(){
+    var list = document.getElementById("List").value;
+    console.log(list);
+    if (list == 2){
+        console.log(list);
+       document.getElementById("channelList").classList.remove("hidden");
+       document.getElementById("channelList").classList.add("show");
+    }else if (list == 1){
+        document.getElementById("channelList").classList.add("hidden");
+        document.getElementById("channelList").classList.remove("show");
+    }
+}
+
+function ex4(){
+    var name = document.getElementById("CusId").value;
+    var Vchanel = document.getElementById("VipChannel").value;
+    var numchanel = document.getElementById("channelList").value;
+    var list = document.getElementById("List").value;
+    var cus1 = 32.5;
+    console.log (cuschannel) ;
+
 
 }
 // function exercise1(){
@@ -139,7 +188,7 @@ function ex3() {
 
 // function calElectricPrice(){
 
-//     var name ;
+//     var names ;
 //     var kw = 500;
 //     var totalPrice ;
 //     if (kw<50){
