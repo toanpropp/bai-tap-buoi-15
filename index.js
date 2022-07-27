@@ -140,70 +140,17 @@ function ex4(){
 
 
 }
-// function exercise1(){
+function tinhTienCap(){
+    var e=document.getElementById("List").value,
+    n=document.getElementById("CusId").value,
+    t=document.getElementById("VipChannel").value,
+    u=document.getElementById("channelList").value,
+    c=0;
+        "2"==e?c=tinhTong(15,75,50,t,u,5):
+        "1"==e?c=tinhTong(4.5,20.5,7.5,t,0,0):
+        alert("Hãy chọn loại khách hàng"),
+    document.getElementById("netmoney").innerHTML="Mã khách hàng: "+n+"; Tiền cáp: "+new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(c)}
     
-//     var standardGrade = 24;
-//     var sub1 =8;
-//     var sub2 =6;
-//     var sub3 =7;
-//     var area = "A";
-//     var studentType = "1";
-//     var areaGrade = calAreaGrade(area);
-//     var studentTypeGrade = calStudentType(studentType);
-//     var totalScore = sub1 + sub2 + sub3 + areaGrade + studentTypeGrade;
-
-//      if (totalScore >= standardGrade) {
-//          console.log("ban da dau ", totalScore);
-//      }else{
-//          console.log("ban da rot ", totalScore);
-//     }
-// }
-// exercise1();
-
-// function calAreaGrade (area) {
-//     if (area === "A"){
-//         return 2;
-//     }
-//     else if (area === "B"){
-//         return 1;
-//     }
-//     else if (area === "C"){
-//         return 0.5;
-//     }else{
-//         return 0;
-//     }
-
-// }
-// function calStudentType(type){
-//     if (type === "1"){
-//         return 2.5;
-//     }else if (type === "2"){
-//         return 2.5;
-//     }else if (type === "3"){
-//         return 1;
-//     }else{
-//         return 0;
-//     }
-// }
-
-// function calElectricPrice(){
-
-//     var names ;
-//     var kw = 500;
-//     var totalPrice ;
-//     if (kw<50){
-//         totalPrice = 500*kw;
-//     }else if(kw <=100){
-//         totalPrice = 500 * 50 +(kw - 50) *650;
-//     }else if(kw <=200){
-//         totalPrice = 500 * 50 +(kw * 650) + ((kw - 100)*850);
-//     }
-//     else if(kw <=350){
-//         totalPrice = 500 * 50 +(kw * 650) + (kw * 850) ((kw - 200)*1100);
-//     }
-//     else if(kw >350){
-//         totalPrice = 500 * 50 +(kw * 650) + (kw * 850) + (kw * 1100)+ ((kw - 350)*1300);
-//     }
-//     console.log("tien dien thang nay cua", name ,"la :", totalPrice);
-// }
-// calElectricPrice();
+function tinhTong(e,n,t,u,c,l){
+        var m=e+n+t*u;return c>10&&(m+=(c-10)*l),m
+    }
